@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "27234069168",
+    "firebase_url": "https://short-blog-app-88234.firebaseio.com",
+    "project_id": "short-blog-app-88234",
+    "storage_bucket": "short-blog-app-88234.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27234069168:android:948f7ad2faa4657d76e975",
+        "android_client_info": {
+          "package_name": "himanshu.shortblogapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27234069168-6i1p891ts11glhebs2doj4rv9e95k5lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "himanshu.shortblogapp",
+            "certificate_hash": "67132a42cce3f8be1fdafbe2e8dacbd021ea6f58"
+          }
+        },
+        {
+          "client_id": "27234069168-de4od7m0bec61a6sjr3v6j7pghuqpkks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlN5b9tbY7sXph-rf9ezq9YKn516moB1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27234069168-de4od7m0bec61a6sjr3v6j7pghuqpkks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

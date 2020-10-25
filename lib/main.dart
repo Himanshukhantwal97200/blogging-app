@@ -33,10 +33,10 @@ void main() async {
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 }
 
-/* App Structure
+/* file Structure
 assets => it will have fonts, images and icons.
 components => Here all the widgets which are used repeatedly by different apps (animations included)
 Screens =>  all the screens
 services => all the backend related work will be done here
-models => all the classes will come under this.
+models => all the model classes will come under this.
  */

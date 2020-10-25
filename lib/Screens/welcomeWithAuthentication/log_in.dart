@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:shortblogapp/Screens/Home/home.dart';
+import 'package:shortblogapp/Screens/homeWithAnimatedDrawer/home.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/components/color_design_button.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/components/google_sign_in_button.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/components/make_input.dart';

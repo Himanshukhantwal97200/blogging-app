@@ -63,7 +63,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             alignment: Alignment.centerLeft,
             child: SafeArea(
               child: Container(
-                color: Colors.black38,
+                decoration: BoxDecoration(
+                  borderRadius:
+                      BorderRadius.only(bottomRight: Radius.circular(50)),
+                  color: Colors.black38,
+                ),
                 width: screenWidth * 0.58,
                 height: screenHeight,
                 child: Column(

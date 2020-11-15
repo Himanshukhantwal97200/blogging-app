@@ -63,7 +63,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             alignment: Alignment.centerLeft,
             child: SafeArea(
               child: Container(
-                color: Colors.black38,
+                decoration: BoxDecoration(
+                  borderRadius:
+                      BorderRadius.only(bottomRight: Radius.circular(50)),
+                  color: Colors.black38,
+                ),
                 width: screenWidth * 0.58,
                 height: screenHeight,
                 child: Column(
@@ -119,8 +123,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               drawerItems(text: "Interests", onTap: () {}),
                               SizedBox(height: screenHeight * 0.025),
                               drawerItems(text: "Your Stories", onTap: () {}),
-                              SizedBox(height: screenHeight * 0.025),
-                              drawerItems(text: "Subscriptions", onTap: () {}),
                             ],
                           ),
                         ),
@@ -206,17 +208,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 ),
                 actions: [
                   Icon(
-                    Icons.search,
-                    color: Colors.black,
-                  ),
-                  SizedBox(width: 20),
-                  Icon(
                     Icons.notifications_none_rounded,
                     color: Colors.black,
                   ),
                   SizedBox(width: 20),
                 ],
-                title: Text("Blogging App"),
+                title: Text("Home"),
               ),
               floatingActionButton: FadeAnimation(
                 1,
@@ -229,8 +226,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               ),
               body: Container(
                 child: Center(
-                  child:
-                      Text('Here we will load blogs from realtime firestore'),
+                  child: Text(''),
                 ),
               ),
             ),

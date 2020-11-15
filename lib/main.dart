@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
+import 'package:shortblogapp/Screens/profile/profile.dart';
 import 'package:shortblogapp/Screens/textEditor/text_editor.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/log_in.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/sign_up.dart';
@@ -19,14 +20,15 @@ void main() async {
       value: AuthService().user,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: Wrapper.id,
-        routes: {
-          Wrapper.id: (context) => Wrapper(),
-          Welcome.id: (context) => Welcome(),
-          SignUpPage.id: (context) => SignUpPage(),
-          LoginPage.id: (context) => LoginPage(),
-          TextEditor.id: (context) => TextEditor(),
-        },
+        // initialRoute: Wrapper.id,
+        // routes: {
+        //   Wrapper.id: (context) => Wrapper(),
+        //   Welcome.id: (context) => Welcome(),
+        //   SignUpPage.id: (context) => SignUpPage(),
+        //   LoginPage.id: (context) => LoginPage(),
+        //   TextEditor.id: (context) => TextEditor(),
+        // },
+        home: ProfileScreen(),
       ),
     ),
   );

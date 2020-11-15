@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shortblogapp/Screens/profile/profile.dart';
 import 'package:shortblogapp/Screens/textEditor/text_editor.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/welcome.dart';
 import 'package:shortblogapp/components/fadeAnimation.dart';
@@ -82,25 +83,29 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           color: Colors.blue[600],
                           width: double.infinity,
                           height: screenHeight * 0.3,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              CircleAvatar(
-                                // if the user has signed in with google then we'll use google gmail image otherwise use this image
-                                backgroundImage: AssetImage(
-                                    "assets/images/generic-profile-picture.jpg"),
-                                minRadius: 35,
-                                maxRadius: 45,
-                              ),
-                              SizedBox(height: 20),
-                              Text(
-                                "Moamen",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
+                          child: GestureDetector(
+                            onTap: () =>
+                                Navigator.pushNamed(context, ProfileScreen.id),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(
+                                  // if the user has signed in with google then we'll use google gmail image otherwise use this image
+                                  backgroundImage: AssetImage(
+                                      "assets/images/generic-profile-picture.jpg"),
+                                  minRadius: 35,
+                                  maxRadius: 45,
                                 ),
-                              )
-                            ],
+                                SizedBox(height: 20),
+                                Text(
+                                  "Moamen",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 18,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Container(

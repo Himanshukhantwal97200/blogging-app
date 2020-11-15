@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:shortblogapp/Screens/welcomeWithAuthentication/components/color_design_button.dart';
 
 class ProfileScreen extends StatefulWidget {
+  static String id = '/profile';
   @override
   _ProfileScreenState createState() => _ProfileScreenState();
 }

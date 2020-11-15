@@ -20,15 +20,15 @@ void main() async {
       value: AuthService().user,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        // initialRoute: Wrapper.id,
-        // routes: {
-        //   Wrapper.id: (context) => Wrapper(),
-        //   Welcome.id: (context) => Welcome(),
-        //   SignUpPage.id: (context) => SignUpPage(),
-        //   LoginPage.id: (context) => LoginPage(),
-        //   TextEditor.id: (context) => TextEditor(),
-        // },
-        home: ProfileScreen(),
+        initialRoute: Wrapper.id,
+        routes: {
+          Wrapper.id: (context) => Wrapper(),
+          Welcome.id: (context) => Welcome(),
+          SignUpPage.id: (context) => SignUpPage(),
+          LoginPage.id: (context) => LoginPage(),
+          TextEditor.id: (context) => TextEditor(),
+          ProfileScreen.id: (context) => ProfileScreen(),
+        },
       ),
     ),
   );
